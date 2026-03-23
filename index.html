@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iggle Originals</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#000;
+}
+
+img{
+  max-width:90%;
+  max-height:90%;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+img:hover{
+  transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<img id="mainImage" src="data:image/webp;base64,UklGRvQNAABXRUJQVlA4IOgNAACwaACdASp2AQ0BPp1Mn0ulpLQqJhPKOoATiWVu4WruQBlmDyqs+w5snvebdAvG38U7qL+aTzqPTB/u/UA/wHVAegB5bXs/fuPlHR1PR9P5e0mcRE65Rn7ZRtszPhQW5TA6yYHWTA6yYHWTA6yYGgXKv4TKQN6Lq7Ocp6iEMXy6eFiZNqgzy0jxuW1MDrJgdYYeI1C/91G7pCxtaU/EraOVA3pguEFR1kwOsMljoiDqaQQxibWWHHPkZNH5JuDcD8dZJ1cmISI8TJwijWIxq3ImU0fOSHMI6iWlFxdOf1C/WJ5n9OEZUqMeo/PETZ6i4RqsQ+iyLpvvu8zWCNPiWgXPT/0OY0q4uAOE3oxR7U52NBfygCE+zXn4A9t1dYp8T2AJR6sGf44v6iOtQzubEz3kvDXvkMJ39RVu59YKCOZE6yPVJGCR+Te3DPG0Bo/LsLsNCb7BmsoO9JztUNE23IAAPqvGcOTy5Y6TFBwpUZmgIPjokzW4HquSb1i+qsxP2jDGVUaymXHwC+e4kcJzgGvvihaVcjMQJzQltfMsn1NUk9rvORKfkKVBgzAKVbQRJsAGpjK/2vuKJC4aEnR7AEQo0h4/Pvn6fTmnD5GzoJi+2TOhSB/nOSY+kBtLG3sNPwpw7PvinipV79FarwRXMFvuzab7LIqOuQAIElOBiGVIq/mG+uLRllWHZeumMQpx3L9NGNv4YFAIY/21Q88uWA3S0Sqef/8xaxMy69fhb9kpK1WBycY++ywzQYU7bXS+fEdhTm4oHq+MgiS0R85UmgJCk8FvRBpQfhVe5acf/1Ulyd/VsOBMD6TgwluDnLIoHYmytkQ6Srt/M8Vhxe1Z1eNKxjbYUqCw9o+sUX88uRmNWULu+uJFDaUKGYil2HSLLNR9/Zkx82Fie8Ygr2tzK7byQt2v4WAZyPtHFlIpRjulSdkqzo/TeTz6jjuaB2rChiksqkkqepEUPIfFAP85lRPt6/9T8w2EyKC6Lh5ovJNtesr5ChhuH+4LzbcqkCFhM2xPrVS28nC3LMLzwpVfc3FtvIuVczukkqR5dIgPact//fUHueVPzyr3wALSRb1hrVLc4gD9gcvuZfFM7n9OxjWsmB1kwO1JTo6n55U/EAAA/urdAAAAA==">
+
+
+<script>
+const games = [
+  "https://gorillavanilla.vercel.app/",
+  "https://bird-balls.vercel.app/"
+];
+
+document.getElementById("mainImage").onclick = () => {
+  const randomGame = games[Math.floor(Math.random() * games.length)];
+  window.location.href = randomGame;
+};
+</script>
+
+</body>
+</html>
